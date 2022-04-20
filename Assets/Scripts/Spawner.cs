@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
         if (nextSpawn>spawnTime)
         {
             // Spawn the gameObject at the spawners current position and rotation
-            GameObject projectileGameObject = Instantiate(spawnPrefab, transform.position, transform.rotation, null);
+            GameObject projectileGameObject = Instantiate(spawnPrefab, transform.position, transform.rotation);
 
             // reset the time until nextSpawn
             nextSpawn = 0f;
